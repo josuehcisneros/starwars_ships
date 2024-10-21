@@ -1,0 +1,82 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+header h1 {
+color: rgb(255, 231, 72);
+font-family: 'Roboto', sans-serif;
+background-color: black;
+margin: 0;
+padding: 1rem;
+text-align: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+nav button {
+    width: 115%;
+    border-radius: 10px;
+    padding: .75rem;
+    color: black;
+    background-color: rgb(205, 183, 58);
+    font-weight: 400;
+    width: 100%;
+}
+
+nav button:hover {
+    background-color: rgb(255, 225, 53); 
+    color: rgb(0, 0, 0);              
+    border: 3px solid #0069d8; 
+    transform: scale(1.05);    
+    cursor: pointer;            
+    transition: all 0.3s ease;  
+}
+
+main {
+    padding: 20px;            
+    margin: 5px;             
+}
+
+main figure {
+    margin: 0;  
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+main figure img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    padding: 10px;
+}
+
+main figcaption {
+    color: white;
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(208, 208, 208);
+    padding: 2rem;
+    text-align: center;
+    font-size: 11px;
+}
+
